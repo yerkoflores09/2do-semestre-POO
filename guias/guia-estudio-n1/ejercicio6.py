@@ -1,4 +1,5 @@
 class Cancion():
+    #constructor de la clase
     def __init__(self, titulo, artista, duracion_segundos,):
         self.titulo = titulo
         self.artista = artista
@@ -6,12 +7,12 @@ class Cancion():
 
     #metodos de clase 
     #convertir la duracion a formato mm:ss (3:45)
-    def milisegundos(self):
-        m, s = divmod(max(self.duracion_segundos(), 0), 60)
-        return f'{m}:{s}'
+    def min_seg(self):
+        m, s = divmod(max(self.duracion_segundos, 0), 60) #divmod divide y obtiene el resto (en formato de tupla)
+        return f'{m}:{s:02d}' #ejemplo: 185 segundos -> "3:05"
     
     def __str__(self):
-        return f'{self.titulo} - {self.artista} - {self.duracion_segundos}'
+        return f'{self.titulo} - {self.artista} ({self.min_seg()})'
 
 
 
