@@ -13,3 +13,4 @@ class FuncionTrigonometrica():
     print('este es un mensaje de prueba para demostrar que clone este repositorio correctamente y puedo verlo a atreves de los dos computadores ndeaaaaaaaaa')
     print('xdxdxddd')
     
+    print('hola k ase, este es un nuevo mensaje de prueba para que el payaso del repo se ponga vio')
