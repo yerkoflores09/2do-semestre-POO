@@ -10,4 +10,6 @@ class FuncionTrigonometrica():
         x = x % 360
         rad = x * 3.14159 / 180
 
+    print('este es un mensaje de prueba para demostrar que clone este repositorio correctamente y puedo verlo a atreves de los dos computadores ndeaaaaaaaaa')
+    print('xdxdxddd')
     
