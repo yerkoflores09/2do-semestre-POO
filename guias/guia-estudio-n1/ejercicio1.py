@@ -33,6 +33,6 @@ print(reserva1)
 print('duracion:', reserva1.calcular_estadia(), 'noches')
 
 reserva1.cambiar_fecha_salida(18)
-print(reserva1)
+print(reserva1) #hace un print al metodo magico "str"
 
 del reserva1 #al eliminar imprime el mensaje

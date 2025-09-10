@@ -1,10 +1,10 @@
 class Producto():
     def __init__(self, producto, precio, cantidad, codigo):
         self.producto = producto
-        self.precio = precio
-        self.cantidad = cantidad
+        self.precio = int(precio)
+        self.cantidad = int(cantidad)
         self.codigo = codigo
-        self.historial = [] #lista de cambios en el stock
+        self.historial = [] #lista para registrar cambios en el stock
 
     #metodo para actualizar el stock
     def actualizar_stock(self, cambio):
@@ -61,6 +61,7 @@ p1 = Producto('manzanas', 500, 10, 'A1')
 p2 = Producto('sandia', 900, 15, 'B2')
 
 inventario = Inventario()
+
 inventario.agregar_producto(p1)
 inventario.agregar_producto(p2)
 
