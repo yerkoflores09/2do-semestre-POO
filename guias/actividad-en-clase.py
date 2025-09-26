@@ -1,9 +1,9 @@
 class Libro():
-    def __init__(self, titulo, autor, anio, cantidad):
-        self.titulo = titulo
-        self.autor = autor
-        self.anio = anio
-        self.cantidad = cantidad
+    def __init__(self, titulo, autor, anio, stock):
+        self._titulo = titulo
+        self._autor = autor
+        self._anio = anio
+        self._stock = stock
 
     def __str__(self):
         return f'{self.titulo} - {self.autor} ({self.anio}) | Cantidad: {self.cantidad}'
