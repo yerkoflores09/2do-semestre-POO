@@ -1,6 +1,6 @@
 import pygame
 
-class RectanguloGrande:
+class RectanguloGrande():
     def __init__(self, x, y, ancho, alto):
         self.x = x
         self.y = y
