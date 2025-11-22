@@ -1,5 +1,5 @@
 import pygame 
-from rectangulo_pequeño import RectanguloPequeno
+from rectangulo_pequeno import RectanguloPequeno
 from rectangulo_grande import RectanguloGrande
 
 pygame.init()
@@ -34,7 +34,7 @@ while running:
     if rectangulo_pequeno.rect.colliderect(rectangulo_grande.rect):
         #si existe colision, se reestablecen las posiciones anteriores 
         rectangulo_pequeno.restablecer_posicion(*pos_anterior_pequeno)
-        rectangulo_grande.restableceer_posicion(*pos_anterior_grande)
+        rectangulo_grande.restablecer_posicion(*pos_anterior_grande)
         rectangulo_pequeno.cambiar_color(color_colision)
         rectangulo_grande.cambiar_color(color_colision)
 
