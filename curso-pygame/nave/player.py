@@ -1,17 +1,17 @@
 import pygame
-from settings import SCREEN_WIDTH, SCREEN_HEIGHT, PLAYER_SPEED
+from settings import SCREEN_WIDTH, SCREEN_HEIGHT, PLAYER_SPEED, BLUE
 
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         # Atributos de la nave
-        self.image = pygame.Surface((50,50), pygame.SRCALPHA)
+        self.image = pygame.Surface((50,50), pygame.SRCALPHA) #crea una superficie transparente
         self.rect = self.image.get_rect()
         self.rect.centerx = SCREEN_WIDTH // 2 #aparecera al medio de la pantalla
         self.rect.bottom = SCREEN_HEIGHT - 10
 
         # Dibujar el triangulo
-        pygame.draw.polygon(self.image, (0,0,255), [(25,0),(0,50),(50,50)])
+        pygame.draw.polygon(self.image, BLUE, [(25,0),(0,50),(50,50)])
 
     def update(self):
         keys = pygame.key.get_pressed()

@@ -1,11 +1,12 @@
 import pygame
 import random
-from settings import SCREEN_WIDTH, SCREEN_HEIGHT, METEOR_SPEED
+from settings import SCREEN_WIDTH, SCREEN_HEIGHT, METEOR_SPEED, RED
 
 class Meteor(pygame.sprite.Sprite):
     def __init__(self):
+        super().__init__()
         self.image = pygame.Surface((30,30))
-        pygame.draw.circle(self.image,(255,0,0),(15,15),15)
+        pygame.draw.circle(self.image,(255,0,0),(15,15),15) #dibuja el circulo rojo
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREEN_WIDTH - self.rect.width) #aparece aleatorio en la parte superior de la pantalla
         self.rect.y = -self.rect.height #simular que aparece fuera de la pantalla el meteorito
